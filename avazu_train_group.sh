@@ -1,0 +1,2 @@
+#!/bin/bash
+CUDA_VISIBLE_DEVICES=0 python trainer_group.py avazu rankmixer+wukong --feature 4500000 --field 24 --data_dir /path2avzu_record --seed 2001 --cuda 0 --save_dir 'path2save/rankmixer+wukong.pt' --dim 24 --bsize 4096 --lr 0.0001 --l2 0.0 --optim adam --max_epoch 1 --mlp_dropout 0.0 
